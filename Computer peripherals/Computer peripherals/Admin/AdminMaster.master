@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    </head>
+<body>
+    <form id="form1" runat="server">
+  <table align="center" width="900px" border="1" bordercolor="violet">
+      <tr>
+          <td align = "left" width="900px">
+              <asp:Image ID="Image1" runat="server" ImageUrl="~/Computer peripherals/Images/banner.jpg" width="900px"/>
+           </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="AddNewCategory.aspx">Category</a>&nbsp;
+              <a href="AddNewProducts.aspx">Products</a>&nbsp;
+              <a href="../Home.aspx">Home</a>
+          </td>
+      </tr>
+      <tr>
+          <td valign="top">
+              <asp:Panel ID="pnlcategories" runat="server">
+                 
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+                  </asp:ContentPlaceHolder>
+              </asp:Panel>
+          </td>
+      </tr>
+      <tr>
+          <td align="center">
+              &copy;ComputerPeripherals.com
+          </td>
+      </tr>
+
+  </table>
+      </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CheckOut.master.cs" Inherits="CheckOut1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table align="center" width="900px" border="1" bordercolor="violet">
+      <tr>
+          <td align = "left" width="900px">
+              <asp:Image ID="Image1" runat="server" ImageUrl="~/Computer peripherals/Images/banner.jpg" width="900px"/>
+           </td>
+      </tr>
+            <tr>
+          <td valign="top">
+              <asp:Panel ID="pnlcategories" runat="server">
+                 
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">  
+                  </asp:ContentPlaceHolder>
+              </asp:Panel>
+          </td>
+      </tr>
+      <tr>
+          <td align="center">
+              &copy;ComputerPeripherals.com
+          </td>
+      </tr>
+
+  </table>
+
+  
+    </form>
+</body>
+</html>
